@@ -8,7 +8,6 @@ Features
 	Text-to-speech output with OpenAI TTS (tts-1).
 	Simple memory system to remember recent conversation.
 	Continuous listening mode, speak anytime; say “stop” to exit.
-	Fully GitHub-safe (API key stored in environment variable).
 
 Requirements
     Python 3.10+
@@ -18,7 +17,6 @@ pip install openai sounddevice soundfile numpy
 Setup
 A   Get an OpenAI secret key starting with sk_ not sk-proj lol
 	Go to OpenAI API Keys
-	Add a payment method if required.
 B   Set environment variable:
     Windows CMD:
     set OPENAI_API_KEY=sk-***********
@@ -27,5 +25,5 @@ C   Run the agent:
 Usage
 	Speak clearly into your microphone when prompted.
 	The agent will print what you said and the assistant’s reply.
-	You will also hear the assistant’s response via speakers.
+	You will also hear the assistant’s response via speakers or mic.
 	Say “stop” to exit the program.
