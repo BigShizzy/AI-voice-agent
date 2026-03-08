@@ -1,0 +1,34 @@
+AI Voice Agent
+
+A Python-based voice assistant that listens to your voice, converts speech to text, generates a GPT response, and speaks back in real time.
+
+Features
+    Live voice recording and transcription using OpenAI Whisper.
+	GPT responses via gpt-4o-mini.
+	Text-to-speech output with OpenAI TTS (tts-1).
+	Simple memory system to remember recent conversation.
+	Continuous listening mode — speak anytime; say “stop” to exit.
+	Fully GitHub-safe (API key stored in environment variable).
+
+Requirements
+    Python 3.10+
+    Packages:
+pip install openai sounddevice soundfile numpy
+
+Setup
+A   Get an OpenAI secret key starting with sk-…
+	Go to OpenAI API Keys￼
+	Add a payment method if required.
+B   Set environment variable:
+    Windows CMD:
+    set OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
+C   Run the agent:
+    python voice_agent.py
+Usage
+	Speak clearly into your microphone when prompted.
+	The agent will print what you said and the assistant’s reply.
+	You will also hear the assistant’s response via speakers.
+	Say “stop” to exit the program.
+
+License
+    MIT License — free to use, modify, and distribute.
