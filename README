@@ -7,8 +7,7 @@ Features
 	GPT responses via gpt-4o-mini.
 	Text-to-speech output with OpenAI TTS (tts-1).
 	Simple memory system to remember recent conversation.
-	Continuous listening mode — speak anytime; say “stop” to exit.
-	Fully GitHub-safe (API key stored in environment variable).
+	Continuous listening mode, speak anytime; say “stop” to exit.
 
 Requirements
     Python 3.10+
@@ -16,19 +15,15 @@ Requirements
 pip install openai sounddevice soundfile numpy
 
 Setup
-A   Get an OpenAI secret key starting with sk-…
-	Go to OpenAI API Keys￼
-	Add a payment method if required.
+A   Get an OpenAI secret key starting with sk- not sk-proj oo lol
+	Go to OpenAI API Keys
 B   Set environment variable:
     Windows CMD:
-    set OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
+    set OPENAI_API_KEY=sk-**************
 C   Run the agent:
     python voice_agent.py
 Usage
 	Speak clearly into your microphone when prompted.
 	The agent will print what you said and the assistant’s reply.
-	You will also hear the assistant’s response via speakers.
+	You will also hear the assistant response via speakers or mic
 	Say “stop” to exit the program.
-
-License
-    MIT License — free to use, modify, and distribute.
